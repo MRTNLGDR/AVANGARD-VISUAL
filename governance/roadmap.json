@@ -1,0 +1,19 @@
+{
+  "release": "0.3.0",
+  "updated_at": "2026-08-06T22:10:00Z",
+  "critical_path": [
+    "auditoria de falso positivo de inferência — DONE",
+    "DAG tipado, agente, multirreferência e first/last frame — DONE",
+    "providers cloud e 3D adapters — DONE_PROTOCOL",
+    "pré-voo e interface ativa — DONE",
+    "40 testes aprovados + 3 contratos POSIX ignorados no Windows — DONE_CONTROL_PLANE",
+    "materializar upstreams e integrar fisicamente Vibe — PENDING_ENV",
+    "inferência real de imagem — PENDING_TARGET",
+    "inferência real de vídeo T2V/I2V/FLF2V — PENDING_TARGET",
+    "inferência real 3D — PENDING_TARGET",
+    "chamadas cloud com chaves reais — PENDING_CREDENTIALS",
+    "build Tauri/Setup.exe e benchmark RTX 4090 — PENDING_TARGET"
+  ],
+  "next_session": "TARGET-INFERENCE-VALIDATION-001",
+  "status": "IMPLEMENTED_BUT_AUDIT_FAILED"
+}

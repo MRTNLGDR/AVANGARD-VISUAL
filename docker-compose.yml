@@ -1,0 +1,23 @@
+services:
+  cinenode:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: avangard-visual:0.3.0
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8787:8787"
+    environment:
+      CINENODE_HOME: /data
+      CINENODE_HOST: 0.0.0.0
+      CINENODE_PORT: 8787
+      CINENODE_ALLOW_LOOPBACK_PROXY: "1"
+      CINENODE_ALLOW_SHUTDOWN: "0"
+      CINENODE_ENGINES_DIR: /host-engines
+      CINENODE_MODELS_DIR: /host-models
+    volumes:
+      - ./data:/data
+      - ./data/engines:/host-engines
+      - ./data/models:/host-models
+    extra_hosts:
+      - "host.docker.internal:host-gateway"

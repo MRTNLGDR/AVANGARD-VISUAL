@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "screenshots": [
+    "docs/screenshots/01-dashboard.png",
+    "docs/screenshots/02-agent-director.png",
+    "docs/screenshots/03-agent-workflow.png",
+    "docs/screenshots/04-preflight-blocked.png",
+    "docs/screenshots/05-providers.png",
+    "docs/screenshots/06-governance.png",
+    "docs/screenshots/07-responsive-1024.png"
+  ],
+  "console_errors": [],
+  "network_errors": [],
+  "server_log_tail": "INFO:     Started server process [7607]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:38307 (Press CTRL+C to quit)\nINFO:     127.0.0.1:38680 - \"GET /api/health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET / HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET /styles.css HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38686 - \"GET /app.js HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38686 - \"GET /api/bootstrap HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38696 - \"GET /api/jobs?limit=100 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"GET /api/assets?limit=200 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38714 - \"GET /api/governance/snapshot HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38714 - \"GET /api/events HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"POST /api/agent/plan HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"GET /api/governance/snapshot HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"POST /api/workflows/validate HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"POST /api/workflows/preflight HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"GET /api/providers/catalog HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38696 - \"GET /api/providers/catalog HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38696 - \"GET /api/providers/catalog HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET /api/providers/status HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38682 - \"GET / HTTP/1.1\" 304 Not Modified\nINFO:     127.0.0.1:38682 - \"GET /api/bootstrap HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38700 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:38686 - \"GET /api/jobs?limit=100 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:44964 - \"GET /api/assets?limit=200 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:44978 - \"GET /api/governance/snapshot HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:44978 - \"GET /api/events HTTP/1.1\" 200 OK\n"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "screenshots": [
+    "docs/screenshots-v0.2/01-dashboard.png",
+    "docs/screenshots-v0.2/02-workflow.png",
+    "docs/screenshots-v0.2/03-governance.png",
+    "docs/screenshots-v0.2/04-responsive-1024.png"
+  ],
+  "console_errors": [],
+  "network_errors": [],
+  "server_log_tail": "INFO:     Started server process [2955]\nINFO:     Waiting for application startup.\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:51633 (Press CTRL+C to quit)\nINFO:     127.0.0.1:52868 - \"GET /api/health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52884 - \"GET / HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52884 - \"GET /styles.css HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52896 - \"GET /app.js HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52896 - \"GET /api/bootstrap HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52884 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52906 - \"GET /api/jobs?limit=100 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"GET /api/assets?limit=200 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52920 - \"GET /api/governance/snapshot HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52920 - \"GET /api/events HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"POST /api/projects HTTP/1.1\" 201 Created\nINFO:     127.0.0.1:52910 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"POST /api/workflows/validate HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"PUT /api/projects/prj_fc0c9438b35e47ffb386318a60cee847 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52910 - \"GET / HTTP/1.1\" 304 Not Modified\nINFO:     127.0.0.1:52910 - \"GET /api/bootstrap HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52884 - \"GET /api/governance/snapshot HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52906 - \"GET /api/projects HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52896 - \"GET /api/jobs?limit=100 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52926 - \"GET /api/assets?limit=200 HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:52884 - \"GET /api/events HTTP/1.1\" 200 OK\n"
+}

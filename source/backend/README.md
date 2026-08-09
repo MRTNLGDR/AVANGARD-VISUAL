@@ -1,8 +1,6 @@
 # Avangard Visual 0.3.0
 
-Estúdio nodal local-first para criação de imagens, vídeos, filmes e objetos 3D. O produto combina um DAG tipado, Diretor IA, adapters locais/cloud, pré-voo de dependências e uma separação explícita entre **integração disponível**, **modelo baixado** e **inferência neural comprovada**.
-
-> A versão 0.3 reorganiza a base em produto, assets, modelos, utilidades, vendor e arquivo histórico; também substitui toda a identidade visível por **Avangard Visual**. Consulte `PROJECT_STRUCTURE.md`.
+Gerenciador nodal local-first para criação de imagens, vídeos, filmes e malhas 3D. Esta versão substitui o núcleo anterior que validava apenas banco/API por um DAG tipado, um Diretor IA, adapters reais, pré-voo de dependências e uma separação explícita entre **teste de protocolo** e **inferência neural real**.
 
 ## Estado honesto desta entrega
 
@@ -117,4 +115,4 @@ python utilities/browser_e2e.py --root . --screenshots assets/previews/v0.2.0-e2
 python utilities/validate_package.py --root . --run-smoke
 ```
 
-Resultado local da versão 0.3: **40 testes aprovados, 3 contratos POSIX ignorados no Windows**, API HTTP 200 e dashboard no navegador interno com 0 erros de console. Consulte `TEST_REPORT.md`; a auditoria 0.2 foi preservada em `archive/reports/v0.2.0`.
+Resultado local da versão 0.3: **40 testes aprovados, 3 contratos POSIX ignorados no Windows**, API HTTP 200 e dashboard no navegador interno com 0 erros de console. A inferência neural continua bloqueada até os pesos serem instalados e testados.

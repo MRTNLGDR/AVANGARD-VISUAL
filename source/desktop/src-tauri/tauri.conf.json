@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Avangard Visual",
+  "version": "0.3.0",
+  "identifier": "studio.avangard.visual.local",
+  "build": {
+    "frontendDist": "../../backend/cinenode/frontend"
+  },
+  "app": {
+    "windows": [],
+    "security": {
+      "csp": "default-src 'self' http://127.0.0.1:8787; connect-src 'self' http://127.0.0.1:8787; img-src 'self' http://127.0.0.1:8787 data: blob:; media-src 'self' http://127.0.0.1:8787 blob:; style-src 'self' 'unsafe-inline'; script-src 'self'"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "externalBin": ["binaries/cinenode-backend"],
+    "resources": [],
+    "windows": {
+      "wix": { "language": "pt-BR" }
+    }
+  }
+}

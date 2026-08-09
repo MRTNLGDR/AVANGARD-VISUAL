@@ -1,0 +1,322 @@
+[
+  {
+    "id": "OSS-001",
+    "module": "OSS",
+    "category": "LEGAL",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Auditar repositórios base, licenças e commits",
+    "source_path": "docs/OPEN_SOURCE_INTEGRATION.md"
+  },
+  {
+    "id": "OSS-SUPPLY-CHAIN-001",
+    "module": "OSS",
+    "category": "SECURITY",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Quarentena, varredura de Unicode invisível e promoção atômica de upstreams",
+    "source_path": "utilities/audit_upstream.py"
+  },
+  {
+    "id": "ARCH-001",
+    "module": "ARCH",
+    "category": "ARCHITECTURE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Definir arquitetura local e responsabilidades dos componentes",
+    "source_path": "docs/ARCHITECTURE.md"
+  },
+  {
+    "id": "DB-001",
+    "module": "CORE",
+    "category": "BACKEND",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "SQLite, migrations, WAL, CRUD e recuperação",
+    "source_path": "source/backend/cinenode/database.py"
+  },
+  {
+    "id": "DAG-001",
+    "module": "CORE",
+    "category": "ENGINE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Validar e executar DAG nodal com fila persistente",
+    "source_path": "source/backend/cinenode/workflow.py"
+  },
+  {
+    "id": "ENG-001",
+    "module": "ENGINES",
+    "category": "INTEGRATION",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Adaptadores reais para sd.cpp, WanGP, ComfyUI, Real-ESRGAN, RIFE, FFmpeg, Ollama e OpenCode",
+    "source_path": "source/backend/cinenode/engines"
+  },
+  {
+    "id": "UI-001",
+    "module": "UI",
+    "category": "FRONTEND",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "DONE",
+    "title": "Editor nodal, projetos, jobs, galeria, engines e configurações",
+    "source_path": "source/backend/cinenode/frontend/app.js"
+  },
+  {
+    "id": "GOV-001",
+    "module": "GOV",
+    "category": "GOVERNANCE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Snapshot único, polling, SSE, tarefas, alertas, logs e changelog",
+    "source_path": "source/backend/cinenode/governance.py"
+  },
+  {
+    "id": "SECURITY-001",
+    "module": "SECURITY",
+    "category": "SECURITY",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Host/origin/token, upload, path containment, ZIP restore e subprocessos seguros",
+    "source_path": "docs/SECURITY.md"
+  },
+  {
+    "id": "TEST-CORE-001",
+    "module": "TEST",
+    "category": "TEST",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Executar testes unitários, integração, mídia, segurança e recuperação",
+    "source_path": "TEST_REPORT.md"
+  },
+  {
+    "id": "E2E-001",
+    "module": "TEST",
+    "category": "E2E",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "DONE",
+    "title": "Validar navegador real, persistência, governança e responsividade",
+    "source_path": "assets/previews/v0.2.0-e2e/browser-e2e-report.json"
+  },
+  {
+    "id": "WHEEL-001",
+    "module": "PACKAGING",
+    "category": "PACKAGING",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "DONE",
+    "title": "Construir e instalar wheel Python do backend",
+    "source_path": "utilities/installers/python"
+  },
+  {
+    "id": "INSTALL-001",
+    "module": "PACKAGING",
+    "category": "INSTALLATION",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Validar instalação de um clique com wheel e fallback automático de dependências",
+    "source_path": "utilities/install.sh"
+  },
+  {
+    "id": "PKG-001",
+    "module": "PACKAGING",
+    "category": "PACKAGING",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "DONE",
+    "title": "Scripts Windows/macOS/Linux, Docker, ZIP e checksum",
+    "source_path": "scripts"
+  },
+  {
+    "id": "OSS-SYNC-001",
+    "module": "OSS",
+    "category": "OPERATIONS",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "PENDING",
+    "title": "Materializar backups upstream pinados, audits, lock e checksums no ambiente com rede",
+    "source_path": "vendor/opensources"
+  },
+  {
+    "id": "MODEL-001",
+    "module": "MODELS",
+    "category": "OPERATIONS",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "PENDING",
+    "title": "Baixar e validar pelo menos um perfil de imagem e um de vídeo no Alienware",
+    "source_path": "docs/MODEL_MATRIX.md"
+  },
+  {
+    "id": "GPU-TEST-001",
+    "module": "TEST",
+    "category": "TEST",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "PENDING",
+    "title": "Executar geração real e benchmark na RTX 4090 Laptop 16 GB",
+    "source_path": "docs/VALIDATION.md"
+  },
+  {
+    "id": "TAURI-BUILD-001",
+    "module": "PACKAGING",
+    "category": "PACKAGING",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "PENDING",
+    "title": "Compilar, testar e assinar o instalador Tauri no Windows",
+    "source_path": "source/desktop/src-tauri"
+  },
+  {
+    "id": "AUDIT-REAL-001",
+    "module": "AUDIT",
+    "category": "AUDIT",
+    "priority": "CRITICAL",
+    "severity": "CRITICAL",
+    "status": "DONE",
+    "title": "Separar testes de protocolo, controle e inferência neural",
+    "source_path": "docs/AUDIT_REPORT.md"
+  },
+  {
+    "id": "TYPED-DAG-001",
+    "module": "CORE",
+    "category": "ENGINE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Expandir catálogo para 24 nós com portas e multiplicidade tipadas",
+    "source_path": "source/backend/cinenode/workflow.py"
+  },
+  {
+    "id": "AGENT-001",
+    "module": "AGENT",
+    "category": "AGENT",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Criar DAG persistente por brief, referências e capacidade do provider",
+    "source_path": "source/backend/cinenode/agent.py"
+  },
+  {
+    "id": "MULTIREF-001",
+    "module": "AGENT",
+    "category": "MEDIA",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Referências múltiplas com papéis character, style, product, composition, multiview e máscara",
+    "source_path": "source/backend/cinenode/schemas.py"
+  },
+  {
+    "id": "VIDEO-FLF-001",
+    "module": "VIDEO",
+    "category": "ENGINE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Start frame e end frame separados com perfil FLF2V e --end-img",
+    "source_path": "source/backend/cinenode/engines/sd_cpp.py"
+  },
+  {
+    "id": "PROVIDERS-001",
+    "module": "PROVIDERS",
+    "category": "INTEGRATION",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Adaptadores Freepik, Replicate, fal.ai, Tripo v2 e REST genérico",
+    "source_path": "source/backend/cinenode/providers/cloud.py"
+  },
+  {
+    "id": "MESH-3D-001",
+    "module": "3D",
+    "category": "ENGINE",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Nós e adaptadores trellis.cpp, TripoSR, Tripo cloud, CLI genérico e Blender",
+    "source_path": "source/backend/cinenode/engines/mesh.py"
+  },
+  {
+    "id": "PREFLIGHT-001",
+    "module": "AUDIT",
+    "category": "VALIDATION",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "DONE",
+    "title": "Pré-voo bloqueia execução sem binário, peso, workflow, chave ou endpoint",
+    "source_path": "source/backend/cinenode/preflight.py"
+  },
+  {
+    "id": "FRONTEND-002",
+    "module": "UI",
+    "category": "FRONTEND",
+    "priority": "HIGH",
+    "severity": "MEDIUM",
+    "status": "DONE",
+    "title": "Diretor IA, referências tipadas, providers, diagnóstico e pré-voo na interface ativa",
+    "source_path": "source/backend/cinenode/frontend/app.js"
+  },
+  {
+    "id": "INFERENCE-IMAGE-001",
+    "module": "TEST",
+    "category": "INFERENCE",
+    "priority": "CRITICAL",
+    "severity": "CRITICAL",
+    "status": "PENDING",
+    "title": "Gerar e inspecionar imagem real com peso local no Alienware",
+    "source_path": "docs/VALIDATION.md"
+  },
+  {
+    "id": "INFERENCE-VIDEO-001",
+    "module": "TEST",
+    "category": "INFERENCE",
+    "priority": "CRITICAL",
+    "severity": "CRITICAL",
+    "status": "PENDING",
+    "title": "Gerar vídeo real T2V, I2V e FLF2V no Alienware",
+    "source_path": "docs/VALIDATION.md"
+  },
+  {
+    "id": "INFERENCE-3D-001",
+    "module": "TEST",
+    "category": "INFERENCE",
+    "priority": "CRITICAL",
+    "severity": "CRITICAL",
+    "status": "PENDING",
+    "title": "Gerar GLB real com trellis.cpp/TripoSR e validar geometria/textura",
+    "source_path": "docs/VALIDATION.md"
+  },
+  {
+    "id": "CLOUD-LIVE-001",
+    "module": "PROVIDERS",
+    "category": "INTEGRATION",
+    "priority": "CRITICAL",
+    "severity": "HIGH",
+    "status": "PENDING",
+    "title": "Executar chamadas reais com chaves do usuário em cada provider cloud habilitado",
+    "source_path": "docs/VALIDATION.md"
+  },
+  {
+    "id": "VIBE-EMBED-001",
+    "module": "UI",
+    "category": "UPSTREAM",
+    "priority": "HIGH",
+    "severity": "HIGH",
+    "status": "PENDING",
+    "title": "Materializar e incorporar fisicamente o package workflow-builder do Vibe ou documentar substituição aprovada",
+    "source_path": "docs/OPEN_SOURCE_INTEGRATION.md"
+  }
+]

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-06T21:30:00Z",
+  "policy": {
+    "upstream_is_immutable": true,
+    "forks_live_under": "vendor/opensources/forks",
+    "integrations_live_under": "vendor/opensources/integrations",
+    "wan_gp_requires_explicit_acceptance": true,
+    "quarantine_before_promotion": true,
+    "reject_hidden_unicode": true,
+    "audit_reports_live_under": "vendor/opensources/audits"
+  },
+  "repositories": [
+    {
+      "id": "opencode",
+      "name": "OpenCode",
+      "url": "https://github.com/anomalyco/opencode.git",
+      "directory": "OpenCode",
+      "commit": "def7220bfc65b84046e597e9be772eae81f663ff",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Local coding/repair agent; invoked through opencode run with Ollama-compatible local models."
+    },
+    {
+      "id": "vibe-workflow",
+      "name": "Vibe Workflow",
+      "url": "https://github.com/SamurAIGPT/Vibe-Workflow.git",
+      "directory": "Vibe-Workflow",
+      "commit": "27059d0a3d88288b8f1fd5b51ce3f27b81a9dd46",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Reference upstream for React Flow node UX and schema ideas. The active v0.2 runtime is a separate typed canvas implementation; Vibe is not falsely claimed as physically embedded."
+    },
+    {
+      "id": "open-generative-ai",
+      "name": "Open Generative AI",
+      "url": "https://github.com/Anil-matcha/Open-Generative-AI.git",
+      "directory": "Open-Generative-AI",
+      "commit": "a5b4ca0632129b173714261349943057da350cb7",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Local tool/catalog upstream and reference adapters. Cloud MuAPI paths remain optional and disabled by default."
+    },
+    {
+      "id": "stable-diffusion-cpp",
+      "name": "stable-diffusion.cpp",
+      "url": "https://github.com/leejet/stable-diffusion.cpp.git",
+      "directory": "stable-diffusion.cpp",
+      "commit": "c6beeef35526c6dc94b74a7fb69f9d2e6a2a7a12",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Primary lightweight CUDA/Vulkan/CPU image and video inference engine."
+    },
+    {
+      "id": "wangp",
+      "name": "WanGP / Wan2GP",
+      "url": "https://github.com/deepbeepmeep/Wan2GP.git",
+      "directory": "Wan2GP",
+      "commit": "82d70aba1fba90f4abb3f410146594ac8aa28e60",
+      "license": "WanGP Community License 2.0",
+      "required": false,
+      "redistribute": false,
+      "requires_acceptance": true,
+      "role": "Optional external high-end media engine via official shared.api bridge. Never bundled by default."
+    },
+    {
+      "id": "realesrgan-ncnn",
+      "name": "Real-ESRGAN NCNN Vulkan",
+      "url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan.git",
+      "directory": "Real-ESRGAN-ncnn-vulkan",
+      "commit": "37026f49824c5cf84062e7c6a5dd71445dcf610f",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Tiled AI image/frame upscaling."
+    },
+    {
+      "id": "rife-ncnn",
+      "name": "RIFE NCNN Vulkan",
+      "url": "https://github.com/nihui/rife-ncnn-vulkan.git",
+      "directory": "rife-ncnn-vulkan",
+      "commit": "a7532fc3f9f8f008cd6eecd6f2ffe2a9698e0cf7",
+      "license": "MIT",
+      "required": true,
+      "redistribute": true,
+      "role": "Temporal frame interpolation."
+    },
+    {
+      "id": "comfyui",
+      "name": "ComfyUI",
+      "url": "https://github.com/Comfy-Org/ComfyUI.git",
+      "directory": "ComfyUI",
+      "commit": "2eb609766a749e3104485979615e062e401bab97",
+      "license": "GPL-3.0-or-later",
+      "required": false,
+      "redistribute": false,
+      "role": "Optional external workflow engine through its local HTTP API."
+    },
+    {
+      "id": "trellis-cpp",
+      "name": "trellis.cpp",
+      "url": "https://github.com/pwilkin/trellis.cpp.git",
+      "directory": "trellis.cpp",
+      "commit": "1f2e1e71bef9a7a933d504dd3f9b64cba8556d91",
+      "license": "MIT",
+      "required": false,
+      "redistribute": true,
+      "role": "Optional native image-to-3D engine producing textured GLB through trellis-cli."
+    },
+    {
+      "id": "triposr",
+      "name": "TripoSR",
+      "url": "https://github.com/VAST-AI-Research/TripoSR.git",
+      "directory": "TripoSR",
+      "commit": "107cefdc244c39106fa830359024f6a2f1c78871",
+      "license": "MIT",
+      "required": false,
+      "redistribute": true,
+      "role": "Optional fast single-image local 3D reconstruction engine; outputs are verified before a node succeeds."
+    }
+  ]
+}

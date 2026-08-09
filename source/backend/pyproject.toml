@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avangard-visual"
+version = "0.3.0"
+description = "Local-first nodal studio for image, film and 3D generation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Avangard One"}]
+dependencies = [
+  "fastapi>=0.115,<1",
+  "uvicorn[standard]>=0.30,<1",
+  "pydantic>=2.9,<3",
+  "httpx>=0.27,<1",
+  "python-multipart>=0.0.12,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.24,<2", "pillow>=10,<12", "playwright>=1.49,<2"]
+models = ["huggingface-hub>=0.27,<2"]
+
+[project.scripts]
+cinenode = "cinenode.cli:main"
+avangard-visual = "cinenode.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cinenode*"]
+
+[tool.setuptools.package-data]
+cinenode = ["frontend/*", "frontend/**/*", "docs/*", "docs/**/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["../../tests"]
+addopts = "-ra --strict-markers"
+markers = ["integration: integration test", "media: requires FFmpeg", "e2e: browser test"]

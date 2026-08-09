@@ -1,0 +1,119 @@
+[
+  {
+    "id": "OSS-GAP-001",
+    "severity": "HIGH",
+    "status": "RESOLVED",
+    "kind": "DEPENDENCY",
+    "module_id": "OSS",
+    "fact": "Os três repositórios solicitados são complementares, não um motor local completo.",
+    "action": "Resolvido pela separação de responsabilidades e integração de sd.cpp, FFmpeg, Real-ESRGAN, RIFE, Ollama e sidecars opcionais."
+  },
+  {
+    "id": "OSS-SUPPLY-CHAIN-001",
+    "severity": "HIGH",
+    "status": "RESOLVED",
+    "kind": "SECURITY",
+    "module_id": "OSS",
+    "fact": "Clones upstream podem carregar código oculto ou scripts de instalação perigosos.",
+    "action": "Clone em quarentena, commit pinado, auditoria estática, relatório, checksum e promoção atômica antes de uso."
+  },
+  {
+    "id": "INSTALL-GAP-001",
+    "severity": "HIGH",
+    "status": "RESOLVED",
+    "kind": "INSTALLATION",
+    "module_id": "PACKAGING",
+    "fact": "O instalador dependia de atualização de setuptools e de um índice capaz de fornecer todo o runtime.",
+    "action": "O instalador agora prefere o wheel, evita upgrades desnecessários e usa fallback automático validado para pacotes compatíveis do Python hospedeiro quando o índice está indisponível."
+  },
+  {
+    "id": "OSS-SYNC-BLOCK-001",
+    "severity": "MEDIUM",
+    "status": "OPEN",
+    "kind": "ENVIRONMENT",
+    "module_id": "OSS",
+    "fact": "O executor de entrega não possui DNS externo para materializar os clones completos no acervo.",
+    "action": "Executar bootstrap-opensources no Alienware; o processo falha fechado e produz manifest.lock, audits e checksums."
+  },
+  {
+    "id": "BUILD-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "ENVIRONMENT",
+    "module_id": "PACKAGING",
+    "fact": "Windows e RTX 4090 Laptop com 16 GB foram detectados; Rust/Cargo e assinatura do instalador ainda não foram validados.",
+    "action": "Executar utilities/build-tauri.ps1 -Clean e os gates de GPU no Alienware; não considerar o instalador nativo aprovado antes disso."
+  },
+  {
+    "id": "LICENSE-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "LICENSE",
+    "module_id": "OSS",
+    "fact": "WanGP usa WanGP Community License 2.0, com restrições de incorporação, white-label e monetização.",
+    "action": "Manter WanGP externo, opcional, não redistribuído e exigir aceite explícito."
+  },
+  {
+    "id": "MODEL-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "MODEL",
+    "module_id": "MODELS",
+    "fact": "Pesos multi-GB não foram baixados nem executados neste ambiente.",
+    "action": "Baixar pelos bundles com SHA-256, aceitar licenças aplicáveis e validar geração no hardware-alvo."
+  },
+  {
+    "id": "GPU-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "PERFORMANCE",
+    "module_id": "TEST",
+    "fact": "Tempo, VRAM, temperatura e estabilidade CUDA ainda não foram medidos na RTX 4090 Laptop 16 GB.",
+    "action": "Executar benchmark documentado de imagem, vídeo, upscale e exportação no Alienware."
+  },
+  {
+    "id": "OLD-INFERENCE-CLAIM-001",
+    "severity": "CRITICAL",
+    "status": "RESOLVED",
+    "kind": "AUDIT",
+    "module_id": "AUDIT",
+    "fact": "A versão anterior aprovava banco/API/E2E sem executar modelo neural e isso foi apresentado de forma excessivamente positiva.",
+    "action": "A v0.2 separa protocolos de inferência, adiciona pré-voo e mantém os gates de inferência abertos."
+  },
+  {
+    "id": "INFERENCE-NOT-VALIDATED-001",
+    "severity": "CRITICAL",
+    "status": "OPEN",
+    "kind": "INFERENCE",
+    "module_id": "TEST",
+    "fact": "A RTX 4090 Laptop foi detectada, mas nenhum peso local está instalado; nenhuma imagem, vídeo ou malha neural foi inferida nesta máquina.",
+    "action": "Executar os três gates no Alienware e anexar arquivos, logs, VRAM, duração e hashes."
+  },
+  {
+    "id": "CLOUD-LIVE-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "PROVIDER",
+    "module_id": "PROVIDERS",
+    "fact": "Os contratos Freepik, Replicate, fal.ai e Tripo foram testados com transportes simulados, não com chaves reais.",
+    "action": "Habilitar individualmente, executar diagnóstico real e preservar outputs localmente."
+  },
+  {
+    "id": "VIBE-RUNTIME-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "UPSTREAM",
+    "module_id": "UI",
+    "fact": "O runtime ativo é um canvas tipado próprio; o package ReactFlow do Vibe Workflow ainda não foi materializado/incorporado.",
+    "action": "Sincronizar upstream pinado e concluir integração física ou assumir formalmente o canvas substituto."
+  },
+  {
+    "id": "MESH-LIVE-GAP-001",
+    "severity": "HIGH",
+    "status": "OPEN",
+    "kind": "3D",
+    "module_id": "3D",
+    "fact": "Adaptadores e instaladores 3D existem, mas trellis.cpp/TripoSR não foram instalados nem executados neste ambiente.",
+    "action": "Instalar no Alienware, baixar pesos, gerar GLB e validar arquivo não vazio, materiais e preview."
+  }
+]
